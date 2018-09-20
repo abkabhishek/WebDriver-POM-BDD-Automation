@@ -1,0 +1,179 @@
+
+Automation Framework + suite
+
+Project : Startpage.com
+
+
+Architecture:
+
+USING (Selenium) + with (BDD (by Cucumber)) + top of (POM design) + in JAVA Language
+Maven based project
+
+
+Pages:
+
+1. Home Page
+2. Web Result Page
+3. Image Result Page
+4. Video Result Page
+5. Advanced Search Page
+6. Settings Page
+5. Static Pages
+
+
+
+List of methods in all pages:
+
+0. Common
+
+	
+	do_InputSearchTerm
+	do_ClickSearchButton
+	do_ClearSearchBox
+	do_PerformSearch
+	do_ChangeResolution
+	do_OpenMenu
+	do_CloseMenu
+	do_ClickMenuItem
+	do_ClickFooterItem
+	do_NaviteToSettings
+	do_NaivateToSupport
+	do_NavigateToMail
+	do_NavigateToPolicy
+	do_NavigateToAbout
+	do_NavigateToBlog
+	do_NavigateToPress
+	do_ClickHeaderLogo
+	do_ClickHeaderHome
+	
+
+	get_PageTitle
+	get_CurrentResolution
+	get_CurrentPageLanguage
+	
+	check_PageFocus
+	check_MenuAvailable
+	check_HeaderHomeVisibility
+	check_PageLanguage
+	
+	
+
+1. Home Page
+
+	do_OpenHomePage
+	do_SelectImageCategory
+	do_SelectWebCategory
+	do_SelectCategory
+	do_ClickExtendedPageLink
+	do_ClickAddToBrowser
+	
+	get_CurrentCategory
+	
+	check_IsCorrectPage
+	check_FirstFocus
+	check_Slogan
+	check_LogoVisibility
+	
+	
+2. Web Result Page
+
+	do_ClickASponsoredResult
+	do_ClickAOrganicResult
+	
+	
+	
+	check_CurrentCategory
+	check_OrganicResultsVisibility
+	check_SponsoredResultsVisibility
+	
+
+3. Image Result Page
+
+4. Video Result Page
+
+5. Advanced Search Page
+
+6. Settings Page
+
+
+
+
+
+
+
+STEPS TO START THE PROJECT:
+
+
+ - http://toolsqa.com/selenium-cucumber-framework/selenium-end-to-end-automation-test/
+
+1. Create a Maven project
+	> quick archi type
+	> give group id and artifact id
+	
+	> Remove unnecessary (all) packages in both main and test.
+	
+2. Create "resources" folder under "src/test/" for placing feature files and other stuff.
+3. Adding Dependencies
+	> Selenium 3.14.0
+		> Create a E2E class to test selenium, it will not be required for framework
+	> junit > 4.12
+	> Cucumber Java > 1.2.5
+	> Cucumber JUnit > 1.2.5
+	> Cucumber Junit deps > 1.0.5
+	
+4. Create "functionalTests" package under "src/test/resources" for placing feature files.
+	> Create a feature file in it > E2ETest.feature
+	
+5. Runner creation : Create a New Package and name it as runners in "src/test/java" and then create a class named "TestRunner" in the same package.
+	> Try to run TestRunner as Junit test to check the integrated components. It will say to implement steps as per feature file.
+
+6. Step Creation : Create a New Package and name it as stepDefinitions in src/test/java and then creat a class named "E2ESteps_Sample" in the same.
+	> Add Steps	
+	> Try running TestRunner again
+	> Try running through cmd using command "mvn test"
+	
+7. pom creation : Create a New Package file and name it as pageObjects/pages in the src/main/java
+		> Create Page Object Classes for all the pages for sub section as per the project in side  pages package.
+		> Common functions and attribute should be placed in a common object (can be named as Base/Common.etc
+		> Structure should be :
+			
+			xyzPqrPage {
+			// Driver object
+			public WebDriver driver;
+			
+			// elements of the page
+			public final By elementName = By.<locatorType>(<Value>);
+			.
+			.
+			.
+			
+			// Constructor to assign driver
+			public xyzPqrPage(WebDriver driver){
+				this.driver = driver;
+			}
+			
+			// function of page as methods
+			
+			public boolean do_Xyz(){
+		    	
+		    	xyz 
+		    	return true;
+		    
+		    }
+		    .
+		    .
+		    .
+			
+			
+			
+			}
+
+
+> Use Pom object in Step definition
+> Create a Hook class for before and after annotation and create objects of poms and webdriver and utilize them in step definitions
+> Create static > enums
+> create services > Browser and use Browser in Hooks.
+
+> Create TestContext Class to share common attributes among Steps
+> Create blue print class for Data table to dynamically creating variables in steps and sharing values
+
