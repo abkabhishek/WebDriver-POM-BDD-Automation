@@ -1,12 +1,12 @@
-23:08:32,731 DEBUG devLogger<strong>{1}</strong>:23 - Starting Scenario Instance
-23:08:33,887 DEBUG devLogger<strong>{1}</strong>:51 - Created Chrome Browser object
-23:08:34,049 DEBUG devLogger<strong>{1}</strong>:61 - Maximized the browser
-23:08:34,055 DEBUG devLogger<strong>{1}</strong>:19 - Starting Common Page Object
-23:08:34,058 DEBUG devLogger<strong>{1}</strong>:25 - Starting Home Page Object
-23:08:35,903 DEBUG devLogger<strong>{1}</strong>:46 - Saving Page Title to data set
-23:08:36,088 DEBUG devLogger<strong>{1}</strong>:23 - Starting Scenario Instance
-23:08:36,726 DEBUG devLogger<strong>{1}</strong>:51 - Created Chrome Browser object
-23:08:36,918 DEBUG devLogger<strong>{1}</strong>:61 - Maximized the browser
-23:08:36,924 DEBUG devLogger<strong>{1}</strong>:19 - Starting Common Page Object
-23:08:36,924 DEBUG devLogger<strong>{1}</strong>:25 - Starting Home Page Object
-23:08:39,492 DEBUG devLogger<strong>{1}</strong>:47 - Entering Search Term
+23:58:10,493 DEBUG devLogger<strong>{1}</strong>:23 - Starting Scenario Instance
+23:58:11,624 DEBUG devLogger<strong>{1}</strong>:51 - Created Chrome Browser object
+23:58:11,779 DEBUG devLogger<strong>{1}</strong>:61 - Maximized the browser
+23:58:11,788 DEBUG devLogger<strong>{1}</strong>:19 - Starting Common Page Object
+23:58:11,794 DEBUG devLogger<strong>{1}</strong>:25 - Starting Home Page Object
+23:58:13,433 DEBUG devLogger<strong>{1}</strong>:46 - Saving Page Title to data set
+23:58:13,617 DEBUG devLogger<strong>{1}</strong>:23 - Starting Scenario Instance
+23:58:14,293 DEBUG devLogger<strong>{1}</strong>:51 - Created Chrome Browser object
+23:58:14,506 DEBUG devLogger<strong>{1}</strong>:61 - Maximized the browser
+23:58:14,511 DEBUG devLogger<strong>{1}</strong>:19 - Starting Common Page Object
+23:58:14,511 DEBUG devLogger<strong>{1}</strong>:25 - Starting Home Page Object
+23:58:16,721 DEBUG devLogger<strong>{1}</strong>:47 - Entering Search Term

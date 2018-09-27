@@ -1,10 +1,17 @@
 package stepDefinitions;
 
+import java.io.File;
+import java.io.IOException;
+//import java.io.File;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 //import runner.TC;
@@ -35,7 +42,18 @@ public class Hooks {
     }	
 	
 	@After
-    public void afterScenario(){
+    public void afterScenario(Scenario scenario) throws IOException{
+		
+		    if (scenario.isFailed()) {
+		      // Take a screenshot...
+//		      final byte[] screenshot = ((TakesScreenshot) TC.driver).getScreenshotAs(OutputType.BYTES);
+//		      FileUtils.copyFile(screenshot, "err.png"); // ... and embed it in the report.
+		      File scrFile = ((TakesScreenshot)TC.driver).getScreenshotAs(OutputType.FILE);
+				// Now you can do whatever you need to do with it, for example copy somewhere
+			  FileUtils.copyFile(scrFile,new File("target/err.png"));    	
+			
+		    }
+		
 		TC.browser.closeDriver();
     }
 
