@@ -3,6 +3,8 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import services.Log;
+
 public class CommonPage {
 	
 	// Driver object
@@ -14,8 +16,9 @@ public class CommonPage {
 	
 	// Constructor 
     public CommonPage(WebDriver driver){
-
+    	Log.Log.debug("Starting Common Page Object");
         this.driver = driver;
+        
 
     }
 

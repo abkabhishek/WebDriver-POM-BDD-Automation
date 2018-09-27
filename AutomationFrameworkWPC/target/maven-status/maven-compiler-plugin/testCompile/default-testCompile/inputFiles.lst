@@ -1,2 +1,14 @@
-/Users/abk/eclipse-workspace/AutomationFrameworkWPC/src/test/java/runners/TestRunner.java
-/Users/abk/eclipse-workspace/AutomationFrameworkWPC/src/test/java/seleniumTest/E2E_Test.java
+/Users/abk/git/repository/AutomationFrameworkWPC/src/test/java/seleniumTest/E2E_Test.java
+/Users/abk/git/repository/AutomationFrameworkWPC/src/test/java/runners/ScenarioContext.java
+/Users/abk/git/repository/AutomationFrameworkWPC/src/test/java/stepDefinitions/E2ESteps_Sample.java
+/Users/abk/git/repository/AutomationFrameworkWPC/src/test/java/statics/Context.java
+/Users/abk/git/repository/AutomationFrameworkWPC/src/test/java/statics/EnvType.java
+/Users/abk/git/repository/AutomationFrameworkWPC/src/test/java/statics/BrowserType.java
+/Users/abk/git/repository/AutomationFrameworkWPC/src/test/java/stepDefinitions/Hooks.java
+/Users/abk/git/repository/AutomationFrameworkWPC/src/test/java/services/Log.java
+/Users/abk/git/repository/AutomationFrameworkWPC/src/test/java/runners/TC.java
+/Users/abk/git/repository/AutomationFrameworkWPC/src/test/java/pages/CommonPage.java
+/Users/abk/git/repository/AutomationFrameworkWPC/src/test/java/runners/TestRunner.java
+/Users/abk/git/repository/AutomationFrameworkWPC/src/test/java/services/Browser.java
+/Users/abk/git/repository/AutomationFrameworkWPC/src/test/java/pages/HomePage.java
+/Users/abk/git/repository/AutomationFrameworkWPC/src/test/java/stepDefinitions/E2ESteps_Sample2.java

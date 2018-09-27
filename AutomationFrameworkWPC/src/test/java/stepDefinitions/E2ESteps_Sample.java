@@ -15,6 +15,7 @@ import cucumber.api.java.en.When;
 import pages.CommonPage;
 import pages.HomePage;
 import runners.TC;
+import services.Log;
 
 
 public class E2ESteps_Sample {
@@ -42,6 +43,7 @@ public class E2ESteps_Sample {
 	public void i_check_the_Home_page_title() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 //	    pageTitle = TC.base.get_PageTitle();
+		Log.Log.debug("Saving Page Title to data set");
 	    TC.data.set("PageTitle", TC.base.get_PageTitle());
 	}
 

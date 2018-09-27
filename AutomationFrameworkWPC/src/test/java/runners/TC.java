@@ -6,6 +6,7 @@ import pages.CommonPage;
 import pages.HomePage;
 //import managers.PageObjectManager;
 import services.Browser;
+import services.Log;
 
 public class TC {
 	public static Browser browser;
@@ -19,6 +20,7 @@ public class TC {
 //	private PageObjectManager pageObjectManager;
 	
 	public TC(){
+		Log.Log.debug("Starting Scenario Instance");
 		browser = new Browser();
 		driver = browser.getDriver();
 		data = new ScenarioContext();

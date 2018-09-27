@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
+import services.Log;
+
 
 public class HomePage {
 	
@@ -20,7 +22,7 @@ public class HomePage {
 	
 	// Constructor 
     public HomePage(WebDriver driver){
-
+    	Log.Log.debug("Starting Home Page Object");
         this.driver = driver;
 
     }
@@ -42,7 +44,7 @@ public class HomePage {
     }
     
     public boolean do_InputSearchTerm(String searchTerm) {
-    	
+    	Log.Log.debug("Entering Search Term");
     	driver.findElement(SearchBox).sendKeys(searchTerm);
     	return true;
     	

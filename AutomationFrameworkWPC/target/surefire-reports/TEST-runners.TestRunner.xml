@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="runners.TestRunner" time="0.014" errors="0" skipped="4">
+<testsuite tests="9" failures="0" name="runners.TestRunner" time="0.345" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.181-b13"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/abk/eclipse-workspace/AutomationFrameworkWPC"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/abk/git/repository/AutomationFrameworkWPC"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/abk/eclipse-workspace/AutomationFrameworkWPC"/>
+    <property name="user.dir" value="/Users/abk/git/repository/AutomationFrameworkWPC"/>
     <property name="java.runtime.version" value="1.8.0_181-b13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/endorsed"/>
@@ -26,7 +26,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/abk/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf5417350853402760383.tmp"/>
+    <property name="classworlds.conf" value="/Users/abk/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8099957910355863347.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/abk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -53,7 +53,7 @@
     <property name="java.ext.dirs" value="/Users/abk/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Users/abk/eclipse-workspace/AutomationFrameworkWPC/EMBEDDED"/>
+    <property name="maven.home" value="/Users/abk/git/repository/AutomationFrameworkWPC/EMBEDDED"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -62,17 +62,13 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Scenario: Validate the title of the Home page" name="Given I open Google Home page in Browser" time="0.002">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Validate the title of the Home page" name="When I check the Home page title" time="0.003">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Validate the title of the Home page" name="Then Home page title is &quot;abk&quot;" time="0.003">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Validate the title of the Home page" name="Scenario: Validate the title of the Home page" time="0.003">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Validate the title of the Home page" name="Scenario: Validate the title of the Home page" time="0.003"/>
+  <testcase classname="Scenario: Validate the title of the Home page" name="Given I open Google Home page in Browser" time="0.002"/>
+  <testcase classname="Scenario: Validate the title of the Home page" name="When I check the Home page title" time="0"/>
+  <testcase classname="Scenario: Validate the title of the Home page" name="Then Home page title is &quot;abk&quot;" time="0"/>
+  <testcase classname="Scenario: Validate the title of the Home page" name="Scenario: Validate the title of the Home page" time="0.175"/>
+  <testcase classname="Scenario: Validate the basic search from Home page" name="Given I open Google Home page in Browser" time="0"/>
+  <testcase classname="Scenario: Validate the basic search from Home page" name="When I enter search term in search box" time="0"/>
+  <testcase classname="Scenario: Validate the basic search from Home page" name="And I click Search Button" time="0"/>
+  <testcase classname="Scenario: Validate the basic search from Home page" name="Then I navigates to web results page." time="0"/>
+  <testcase classname="Scenario: Validate the basic search from Home page" name="Scenario: Validate the basic search from Home page" time="0.168"/>
 </testsuite>

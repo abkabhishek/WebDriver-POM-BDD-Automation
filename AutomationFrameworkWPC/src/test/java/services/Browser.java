@@ -48,6 +48,7 @@ public class Browser {
         case CHROME : 
 //        	System.setProperty(CHROME_DRIVER_PROPERTY, FileReaderManager.getInstance().getConfigReader().getDriverPath());
         	driver = new ChromeDriver();
+        	Log.Log.debug("Created Chrome Browser object");
     		break;
         case IE : driver = new InternetExplorerDriver();
     		break;
@@ -57,6 +58,7 @@ public class Browser {
 //        driver.manage().timeouts().implicitlyWait(FileReaderManager.getInstance().getConfigReader().getImplicitlyWait(), TimeUnit.SECONDS);
 
         driver.manage().window().fullscreen();
+        Log.Log.debug("Maximized the browser");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;
 	}	
