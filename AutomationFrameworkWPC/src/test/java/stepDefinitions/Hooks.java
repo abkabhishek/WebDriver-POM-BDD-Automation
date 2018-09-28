@@ -11,6 +11,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.vimalselvam.cucumber.listener.Reporter;
+
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -45,13 +47,25 @@ public class Hooks {
     public void afterScenario(Scenario scenario) throws IOException{
 		
 		    if (scenario.isFailed()) {
+		    	String screenshotName = scenario.getName().replaceAll(" ", "_");
+		    try {
+		    	
+		   
 		      // Take a screenshot...
 //		      final byte[] screenshot = ((TakesScreenshot) TC.driver).getScreenshotAs(OutputType.BYTES);
 //		      FileUtils.copyFile(screenshot, "err.png"); // ... and embed it in the report.
 		      File scrFile = ((TakesScreenshot)TC.driver).getScreenshotAs(OutputType.FILE);
 				// Now you can do whatever you need to do with it, for example copy somewhere
-			  FileUtils.copyFile(scrFile,new File("target/err.png"));    	
-			
+			  
+		      File destinationPath = new File(System.getProperty("user.dir") + "/target/cucumber-reports/screenshots/" + screenshotName + ".png");    	
+			  
+		      FileUtils.copyFile(scrFile,destinationPath);    	
+			  
+			  
+			  Reporter.addScreenCaptureFromPath(destinationPath.toString());
+		    } catch (IOException e) {
+		    	
+		    }
 		    }
 		
 		TC.browser.closeDriver();

@@ -48,7 +48,7 @@ public class E2ESteps_Sample2 {
 	@Then("^I navigates to web results page\\.$")
 	public void i_navigates_to_web_results_page() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-	    Assert.assertEquals("Paris - Google Search", TC.base.get_PageTitle());
+	    Assert.assertEquals("Pariss - Google Search", TC.base.get_PageTitle());
 	}
 
  
