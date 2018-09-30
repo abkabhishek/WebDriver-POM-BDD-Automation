@@ -4,24 +4,33 @@
 This is the basic bootstrap project to start with the Automated Testing Framework for any web based project. 
 It uses Selenium Web Driver in POM structure and topped with BDD using Cucumber.
 
-
-# Project Title
-
-One Paragraph of project description goes here
-
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
+To start with framework building, you need to do following steps:
+```
+1. Environment Setup - Setup the development environment on the local machine by installing prerequisites.
+2. Project Setup - Git Clone the WebDriver_POM_BDD_Automation repo on your local machine.
+3. Writing Project's Automated Cases - Start writing Page Objects, Step definitions and Feature Files
+4. Running Test - Run the mvn test, Simple... :)
 
 ```
-Give examples
+
+### Environment Setup - Prerequisites
+
+What things you need to install on you local machine.
+
+```
+1. Java 1.8 JDK
+2. Eclipse - Code Editor (You can you other, then you need to have alternatives of next items.)
+3. Eclipse plugins:
+     a. Cucumber  - cucumber.eclipse.p2updatesite		    http://cucumber.github.io/cucumber-eclipse/update-site/
+     b. Git       - EGit P2 Repository	                http://download.eclipse.org/egit/updates-4.5/
+     c. TestNG    - TestNG Eclipse Composite P2 Repo	  http://beust.com/eclipse
+     d. Maven     - Project Dependency Manager		      http://download.eclipse.org/technology/m2e/releases/
+4. TBA
 ```
 
-### Installing
+### Project Setup - Git Clone
 
 A step by step series of examples that tell you how to get a development env running
 
@@ -38,6 +47,25 @@ until finished
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
+
+### Writing Automated Test Cases - In defined code structure
+
+A step by step series of examples that tell you how to get a development env running
+
+Say what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo
+
 
 ## Running the tests
 
