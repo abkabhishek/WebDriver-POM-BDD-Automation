@@ -1,4 +1,4 @@
-# WebDriver_POM_BDD_Automation
+# WebDriver-POM-BDD-Automation
 ## Bootrap Automated Testing project for web based application
 
 This is the basic bootstrap project to start with the Automated Testing Framework for any web based project. 
